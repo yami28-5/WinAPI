@@ -36,7 +36,7 @@ BOOL CALLBACK DlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			CHAR szBuffer[SIZE] = {};
 			CHAR szMessage[SIZE] = {};
 			HWND hCombo = GetDlgItem(hwnd, IDC_COMBO1);
-			INT i = SendMessage(hCombo, CB_GETCURSEL, 0, 0);	//Get current selection
+			INT i = SendMessage(hCombo, CB_GETCURSEL, 0, 0);
 			SendMessage(hCombo, CB_GETLBTEXT, i, (LPARAM)szBuffer);
 			sprintf
 			(
